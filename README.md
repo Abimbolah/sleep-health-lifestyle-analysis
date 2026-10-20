@@ -41,3 +41,11 @@ The cluster analysis highlighted different combinations of sleep duration, stres
 - Clustering identifies similarities in the selected features; it does not establish cause and effect.
 - Sleep-disorder categories were examined after clustering and were not the target of a predictive model in this analysis.
 - Findings are based on the dataset and should not be interpreted as medical advice.
+
+Project Notebook
+
+https://colab.research.google.com/drive/1ZFNBLZLu6f5wRFyWLq-IpUbvn04cfYiW?usp=sharing
+
+Skills Demonstrated
+
+Data cleaning, exploratory data analysis, feature scaling, data visualization, unsupervised machine learning, cluster evaluation, interpretation of results, and analytical reporting.
