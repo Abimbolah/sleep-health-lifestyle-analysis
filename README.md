@@ -1,47 +1,39 @@
-# Sleep Health & Lifestyle Analysis
+# Sleep Health and Lifestyle Analysis: Data Cleaning, Exploratory Analysis, and K-Means Clustering
 
 ## Project Overview
 
-This project explores relationships between sleep health, lifestyle habits, stress levels, and selected health indicators using Python. I used data cleaning, exploratory data analysis (EDA), feature scaling, and K-Means clustering to examine patterns and group individuals with similar lifestyle characteristics.
+This project explores sleep health and lifestyle data for 374 participants across 13 original variables. Using Python in Google Colab, I cleaned and prepared the dataset, conducted exploratory data analysis (EDA), examined relationships among lifestyle and health indicators, and applied K-Means clustering to identify groups with similar sleep duration, stress levels, and physical activity levels.
 
-The project demonstrates how data analysis can help uncover patterns in a dataset and communicate findings that support further investigation.
+The analysis also compares the resulting clusters with recorded sleep-disorder categories to explore how these characteristics vary across groups.
 
 ## Objectives
 
 - Clean and prepare the dataset for analysis.
-- Explore patterns in sleep duration, stress, and physical activity.
-- Examine relationships among selected lifestyle and health variables.
-- Apply K-Means clustering to identify groups with similar characteristics.
-- Evaluate clustering performance using the silhouette score.
-- Interpret cluster profiles and compare them with sleep-disorder categories.
+- Explore patterns and relationships among sleep, stress, physical activity, and other health indicators.
+- Use visualizations to communicate key findings.
+- Apply K-Means clustering to identify distinct lifestyle profiles.
+- Compare cluster characteristics with recorded sleep-disorder categories.
+- Evaluate the clustering results using the silhouette score.
 
-## Tools and Technologies
+## Tools and Techniques
 
-- **Language:** Python
-- **Data manipulation:** Pandas, NumPy
-- **Visualization:** Matplotlib, Seaborn, Plotly
-- **Machine learning:** Scikit-learn
-- **Environment:** Google Colab
+- **Programming:** Python
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn
+- **Techniques:** Data cleaning, exploratory data analysis, data visualization, feature scaling, K-Means clustering, and cluster evaluation.
 
-## Methodology
+## Clustering Approach
 
-1. **Data preparation:** Inspected the dataset, standardized selected category values, handled missing values, and prepared variables for analysis.
-2. **Exploratory data analysis:** Examined distributions and relationships among sleep duration, stress, physical activity, and other health indicators.
-3. **Feature scaling:** Used `StandardScaler` to scale the variables selected for clustering.
-4. **K-Means clustering:** Grouped observations into four clusters using sleep duration, stress level, and physical activity level.
-5. **Evaluation and interpretation:** Calculated the silhouette score and compared cluster characteristics, including selected health indicators and sleep-disorder categories.
+K-Means clustering was performed using three standardized features: sleep duration, stress level, and physical activity level. The remaining variables were used for exploratory analysis and to help interpret the resulting clusters.
 
-## Key Findings
+Sleep-disorder categories were not used as clustering inputs. They were examined after clustering to compare the distribution of recorded categories across groups.
 
-The cluster analysis highlighted different combinations of sleep duration, stress, and physical activity. The cluster profiles were then compared with health indicators and sleep-disorder categories to explore how these characteristics differed across groups.
+## Important Data Note
 
+The original dataset contains missing values in the Sleep Disorder column. In this analysis, missing entries were assigned to "No Disorder" as a working assumption. This classification should not be interpreted as a confirmed diagnosis or verified absence of a sleep disorder unless supported by the dataset documentation.
 
-## Limitations
+## Project Scope and Limitations
 
-- Clustering identifies similarities in the selected features; it does not establish cause and effect.
-- Sleep-disorder categories were examined after clustering and were not the target of a predictive model in this analysis.
-- Findings are based on the dataset and should not be interpreted as medical advice.
-
+This is an exploratory analysis of the available dataset. Clusters describe similarities among participants based on the selected features; they do not establish causation, diagnose medical conditions, or predict an individual's health outcomes.
 Project Notebook
 
 https://colab.research.google.com/drive/1ZFNBLZLu6f5wRFyWLq-IpUbvn04cfYiW?usp=sharing
