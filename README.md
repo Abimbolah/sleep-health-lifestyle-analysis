@@ -27,10 +27,6 @@ K-Means clustering was performed using three standardized features: sleep durati
 
 Sleep-disorder categories were not used as clustering inputs. They were examined after clustering to compare the distribution of recorded categories across groups.
 
-## Important Data Note
-
-The original dataset contains missing values in the Sleep Disorder column. In this analysis, missing entries were assigned to "No Disorder" as a working assumption. This classification should not be interpreted as a confirmed diagnosis or verified absence of a sleep disorder unless supported by the dataset documentation.
-
 ## Project Scope and Limitations
 
 This is an exploratory analysis of the available dataset. Clusters describe similarities among participants based on the selected features; they do not establish causation, diagnose medical conditions, or predict an individual's health outcomes.
