@@ -2,38 +2,49 @@
 
 ## Project Overview
 
-This project explores sleep health and lifestyle data for 374 participants across 13 original variables. Using Python in Google Colab, I cleaned and prepared the dataset, conducted exploratory data analysis (EDA), examined relationships among lifestyle and health indicators, and applied K-Means clustering to identify groups with similar sleep duration, stress levels, and physical activity levels.
-
-The analysis also compares the resulting clusters with recorded sleep-disorder categories to explore how these characteristics vary across groups.
+This project analyzes the [Sleep Health and Lifestyle Dataset from Kaggle](https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset), containing 374 participants across 13 original variables. Using Python in Google Colab, I performed data cleaning, exploratory data analysis (EDA), and K-Means clustering to identify lifestyle patterns and explore their relationship with recorded sleep-disorder categories.
 
 ## Objectives
 
 - Clean and prepare the dataset for analysis.
-- Explore patterns and relationships among sleep, stress, physical activity, and other health indicators.
-- Use visualizations to communicate key findings.
+- Explore relationships among sleep, stress, physical activity, and other health indicators.
+- Visualize key patterns and findings.
 - Apply K-Means clustering to identify distinct lifestyle profiles.
 - Compare cluster characteristics with recorded sleep-disorder categories.
-- Evaluate the clustering results using the silhouette score.
+- Evaluate clustering performance using silhouette scores.
 
 ## Tools and Techniques
 
 - **Programming:** Python
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn
-- **Techniques:** Data cleaning, exploratory data analysis, data visualization, feature scaling, K-Means clustering, and cluster evaluation.
+- **Environment:** Google Colab
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn
+- **Techniques:** Data cleaning, exploratory data analysis, data visualization, feature scaling, unsupervised machine learning, K-Means clustering, and silhouette analysis.
 
 ## Clustering Approach
 
-K-Means clustering was performed using three standardized features: sleep duration, stress level, and physical activity level. The remaining variables were used for exploratory analysis and to help interpret the resulting clusters.
+K-Means clustering was applied to three standardized features: sleep duration, stress level, and physical activity level. Other variables were used to explore the dataset and interpret the resulting clusters.
 
-Sleep-disorder categories were not used as clustering inputs. They were examined after clustering to compare the distribution of recorded categories across groups.
+I compared solutions with 4, 5, 6, and 10 clusters using cluster sizes, feature averages, the elbow method, and silhouette scores. I selected **five clusters** as a practical balance between meaningful separation and interpretability.
 
-## Project Scope and Limitations
+Sleep-disorder categories were excluded from the clustering inputs and examined afterward to compare their distribution across the resulting groups.
 
-This is an exploratory analysis of the available dataset. Clusters describe similarities among participants based on the selected features; they do not establish causation, diagnose medical conditions, or predict an individual's health outcomes.
-Project Notebook
+## Key Analytical Focus
 
-https://colab.research.google.com/drive/1mU4kolCxGneMUIIDIWNdgbX3InisUNOB?usp=sharing
+The analysis examines:
 
-Skills Demonstrated
+- Differences in sleep duration, stress, and physical activity across clusters.
+- How lifestyle profiles vary among participants.
+- The distribution of recorded sleep-disorder categories across clusters.
+- The usefulness of clustering for identifying exploratory patterns in sleep and lifestyle data.
 
-Data cleaning, exploratory data analysis, feature scaling, data visualization, unsupervised machine learning, cluster evaluation, interpretation of results, and analytical reporting.
+## Project Notebook
+
+[View the complete analysis in Google Colab](https://colab.research.google.com/drive/1mU4kolCxGneMUIIDIWNdgbX3InisUNOB?usp=sharing)
+
+## Skills Demonstrated
+
+Data cleaning, exploratory data analysis, feature scaling, data visualization, Python programming, unsupervised machine learning, K-Means clustering, model evaluation, cluster interpretation, and analytical reporting.
+
+## Limitations
+
+This project is an exploratory analysis of the available dataset. The clusters represent similarities based on the selected features and depend on the chosen variables and clustering parameters. They do not establish causation, diagnose medical conditions, or predict individual health outcomes.
